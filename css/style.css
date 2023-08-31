@@ -1,0 +1,426 @@
+/* 顶部图片 */
+.top-img {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  background-color: pink;
+}
+
+.top-img a {
+  display: block;
+  flex: 1;
+}
+
+.top-img a img {
+  /* flex: 1; */
+  height: 120px;
+  /* text-align: center; */
+}
+
+
+
+
+
+/* 头部导航栏----------整体 */
+header {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
+}
+
+.header-nav {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 导航栏左边--------------- */
+
+.header-nav .nav-left {
+  /* float: left; */
+  /* color: #b0b0b0; */
+}
+
+.header-nav .nav-left {
+  display: flex;
+}
+
+.header-nav .nav-left li a {
+  color: #b0b0b0;
+}
+
+.header-nav .nav-left span {
+  margin: 0 3.6px;
+  color: #333;
+}
+
+.header-nav .nav-left li {
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* 下载APP  显示隐层部分 */
+.header-nav .nav-left li .download {
+  width: 124px;
+  height: 0;
+  background: #fff;
+  box-shadow: 0 1px 5px #aaa;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -62px;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+
+.header-nav .nav-left li .download img {
+  width: 90px;
+  margin: 18px auto 0;
+}
+
+.header-nav .nav-left li .download p {
+  color: #333;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.header-nav li:hover>.download {
+  height: 148px;
+}
+
+.stri {
+  width: 0;
+  height: 0;
+  /* 小三角图标 */
+  border-bottom: 8px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+  display: none;
+}
+
+.header-nav .nav-left li:hover .stri {
+  display: block;
+}
+
+
+
+
+/* 导航栏右边--------------- */
+header .nav-right {
+  display: flex;
+}
+
+.header-nav .nav-right li {
+  margin: 0 5px;
+}
+
+.header-nav .nav-right li a {
+  color: #b0b0b0;
+}
+
+.header-nav .nav-right .cart {
+  width: 120px;
+  height: 40px;
+  background: #424242;
+  margin-left: 25px;
+  z-index: 10;
+  position: relative;
+}
+
+.header-nav .nav-right .cart i {
+  font-style: normal;
+}
+
+
+/* 购物车按钮 */
+.cart:hover>a {
+  color: #ff6700 !important;
+}
+
+
+/* 购物车  悬停 下边延伸 */
+.cart:hover>.cart-list {
+  height: 100px;
+}
+
+.cart-list {
+  /* margin-right: 50px; */
+  width: 316px;
+  height: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: #424242;
+  overflow: hidden;
+  /* 动画 */
+  transition: all 0.3s;
+  line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* logo 导航栏 ------------------ */
+
+header .logo-nav {
+
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  /* position: relative; */
+}
+
+.logo-nav .logo-nav-content {
+  /* 继承父元素 */
+  height: 100px;
+  display: flex;
+  /* background-color: red; */
+}
+
+/* logo图标 */
+.logo-nav .logo-nav-content .logo {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  background: #ff6700;
+  margin-top: 22.5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+.logo-nav .logo-nav-content .logo img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+}
+
+/* logo 位移变换 */
+.mi-home {
+  left: -55px;
+}
+
+.mi-logo {
+  left: 0;
+}
+
+.logo-nav .logo-nav-content .logo:hover .mi-home {
+  left: 0;
+}
+
+.logo-nav .logo-nav-content .logo:hover .mi-logo {
+  left: -55px;
+}
+
+
+/* nav中间标题 */
+.logo-nav .logo-nav-content .nav-bar {
+  width: 875px;
+  height: 100px;
+  line-height: 100px;
+  /* background-color: aquamarine; */
+}
+
+.logo-nav .nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -50px;
+  padding: 0 50px;
+  /* flex-direction: row; */
+}
+
+.logo-nav .nav-bar ul li a {
+  color: #333;
+}
+
+.logo-nav .nav-bar ul li a:hover {
+  color: #ff6700;
+}
+
+
+.nav-bar .nav-bar-img a {
+  /* margin-top: 22.5px; */
+  display: flex;
+}
+
+
+/* 右边搜索框 */
+.logo-nav .logo-nav-content .search {
+  width: 296px;
+  height: 100px;
+  /* background-color: pink; */
+}
+
+
+.search {
+  width: 296px;
+  height: 100px;
+}
+
+.search input {
+  width: 244px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  margin-top: 25px;
+  outline: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-right: 0;
+}
+
+.search button {
+  width: 52px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  float: right;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+/* nav ---------------------结束 */
+
+
+
+
+
+/* banner 版心部分 ------------------*/
+.banner {
+  width: 100%;
+  height: 460px;
+  background-color: pink;
+}
+
+.banner-wrap {
+  position: relative;
+  height: 460px;
+  background-color: skyblue;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* 侧边栏 */
+.side {
+  width: 234px;
+  height: 420px;
+  padding: 20px 0;
+  background: rgba(105, 101, 101, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.side ul li {
+  height: 42px;
+  line-height: 42px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.side ul li:hover {
+  background-color: rgba(255, 103, 0);
+}
+
+.side i {
+  float: right;
+  padding-right: 20px;
+}
+
+.side ul li a {
+  color: #fff;
+}
+
+
+
+
+
+
+/* ad 广告区域 ---------------*/
+
+.ad {
+  width: 100%;
+  height: 170px;
+  padding: 14px 0 26px;
+  background-color: violet;
+}
+
+
+.ad-wrap {
+  height: 170px;
+  background-color: lightpink;
+}
+
+
+.main {
+  width: 100%;
+  background: #f5f5f5;
+  overflow: hidden;
+  padding: 4px 0 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*   <!-- 主要内容区域  -------开始--> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- 底部区域   -------------开始 --> */
+
+
+.footer {}
+
+
+.footer-service {
+  height: 80px;
+  background-color: #ff6700;
+}
+
+
+
+
+.footer-link {
+  width: 100%;
+  height: 172px;
+  padding: 40px 0;
+  background-color: aquamarine;
+}
